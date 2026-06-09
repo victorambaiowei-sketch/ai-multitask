@@ -12,7 +12,7 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 MODEL_ID = "gemini-3-flash-preview"
 
 # function to generative content
-def generate_text(prompt: str) -> str:
+def Ask_gemini(prompt: str) -> str:
     response= client.models.generate_content(
         model=MODEL_ID,
         contents=prompt
